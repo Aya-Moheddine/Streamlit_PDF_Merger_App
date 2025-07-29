@@ -1,6 +1,8 @@
-import fitz  # PyMuPDF
+import fitz 
 from PIL import Image
 import io
+
+# this function compresses the image to reduce its quality. 
 
 def compress_pdf(input_path, output_path, zoom=1.0, image_quality=60):
     pdf = fitz.open(input_path)

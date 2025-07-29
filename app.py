@@ -24,10 +24,8 @@ if uploaded_files:
     
     # Drag-and-drop sort interface
     sorted_names = sort_items(file_names, direction="vertical")
-
     # sorted_names = sort_items(file_names, direction="vertical", label="Drag to reorder:")
 
-    # Map filenames to uploaded file objects
     name_to_file = {file.name: file for file in uploaded_files}
 
     if st.button("Process PDFs"):
